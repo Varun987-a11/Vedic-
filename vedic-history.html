@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vedas: History, Structure, and Origin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+    <style>
+        /* --- CSS Variables (Consistent Theme) --- */
+        :root {
+            --color-amber-gold: #FFB347; /* Soft Amber Gold */
+            --color-deep-space: #0F081C; /* Very Deep Violet */
+            --color-text-primary: #FFF8E1; /* Creamy White */
+            --color-accent-blue: #00BFFF; /* Deep Cyan/Sky Blue */
+        }
+
+        body {
+            font-family: 'Spectral', serif;
+            background-color: var(--color-deep-space);
+            color: var(--color-text-primary);
+            background-image: radial-gradient(circle at 50% 50%, rgba(25, 10, 50, 0.8) 0%, var(--color-deep-space) 100%);
+            min-height: 100vh;
+            padding-top: 5rem; /* Space for the fixed nav bar */
+        }
+
+        .content-container {
+            background-color: rgba(30, 20, 60, 0.3);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 179, 71, 0.3);
+            box-shadow: 0 0 20px rgba(255, 179, 71, 0.1);
+        }
+
+        h2 {
+            color: var(--color-amber-gold);
+            border-bottom: 2px solid rgba(255, 179, 71, 0.5);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li::marker {
+            color: var(--color-amber-gold);
+        }
+
+        .key-term {
+            color: var(--color-amber-gold);
+            font-weight: 700;
+        }
+
+        .navbar {
+            background-color: rgba(15, 8, 28, 0.9); /* Slightly darker for contrast */
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="w-full py-4 fixed top-0 left-0 z-50 navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex-shrink-0 text-xl font-bold text-yellow-300 hover:text-white transition duration-300 tracking-wider">
+                Vedic Wisdom
+            </a>
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="text-gray-300 hover:text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+                <a href="nasadiya-svara.html" class="text-gray-300 hover:text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Nasadiya</a>
+                <a href="#" class="text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300 border border-amber-gold">Veda History</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="max-w-4xl w-full mx-auto p-4 md:p-10">
+
+        <header class="text-center mb-10">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-yellow-300 mb-4 tracking-wider leading-snug">
+                An Introduction to the Vedas
+            </h1>
+            <p class="text-xl text-gray-400 italic">
+                The Origin, Structure, and Enduring Legacy of Ancient Knowledge
+            </p>
+        </header>
+
+        <section class="content-container p-6 md:p-10 rounded-xl space-y-8">
+            
+            <div>
+                <h2 class="text-3xl font-semibold">I. Origin and The Oral Tradition</h2>
+                <p class="text-lg leading-relaxed">
+                    The term **Veda** itself derives from the Sanskrit root *vid*, meaning "to know" or "knowledge." These texts represent the earliest literary record of Indo-Aryan civilization and are considered to be among the world's most ancient scriptures.
+                </p>
+                <ul class="list-disc list-inside mt-4 space-y-3 pl-5 text-gray-300">
+                    <li>
+                        <span class="key-term">Dating:</span> The core hymns of the Rigveda are generally dated by scholars to between **c. 1500 and 1200 BCE**, composed in the northwestern region of the Indian subcontinent (the Punjab).
+                    </li>
+                    <li>
+                        <span class="key-term">Shruti:</span> The Vedas are classified as <span class="key-term">Shruti</span> ("What is Heard"), signifying their status as divine revelations perceived by ancient sages (*Rishis*) during deep meditation. They are traditionally held to be <span class="key-term">Apauruṣeya</span>—not created by man, but eternal.
+                    </li>
+                    <li>
+                        <span class="key-term">Transmission:</span> For millennia, the Vedas were preserved purely through a meticulous **oral tradition**, employing complex mnemonic techniques to ensure their exact phonetic and rhythmic preservation, long before they were committed to writing on perishable materials like palm leaves.
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="border-amber-gold/30">
+
+            <div>
+                <h2 class="text-3xl font-semibold">II. The Fourfold Division: Chaturveda</h2>
+                <p class="text-lg leading-relaxed">
+                    The entire Vedic corpus is canonically divided into four core texts, known collectively as the **Chaturveda**:
+                </p>
+                
+                <ol class="list-decimal list-inside mt-4 space-y-3 pl-5 text-gray-300">
+                    <li>
+                        <span class="key-term">Rigveda:</span> The "Knowledge of Verses." The oldest Veda, containing **1,028 hymns (Suktas)** organized into ten books (*Mandalas*). It is a collection of prayers and praises directed at personified natural deities like Agni (Fire) and Indra (King of Gods), and it includes profound speculative texts like the <a href="nasadiya-svara.html" class="underline text-amber-gold hover:text-white transition duration-200">Nāsadīya Sūktam</a>.
+                    </li>
+                    <li>
+                        <span class="key-term">Yajurveda:</span> The "Worship Knowledge." Primarily a liturgical text containing **formulas and mantras** to be recited by the priest (*Adhvaryu*) while performing sacrificial rituals (*Yajñas*). It is divided into two main schools: **Shukla** (White, clear verses) and **Krishna** (Black, mixed verses and prose commentary).
+                    </li>
+                    <li>
+                        <span class="key-term">Samaveda:</span> The "Knowledge of Melodies." Consists almost entirely of verses taken from the Rigveda but **set to musical scores** (*Gānas*) for chanting by the *Udgāta* priest during Soma sacrifices. It is considered the foundation of Indian classical music.
+                    </li>
+                    <li>
+                        <span class="key-term">Atharvaveda:</span> The "Knowledge of the Fire Priest." A later addition to the canon, it focuses more on **spells, charms, and incantations** for practical aspects of life (healing, protection), alongside its own set of philosophical hymns.
+                    </li>
+                </ol>
+            </div>
+
+            <hr class="border-amber-gold/30">
+
+            <div>
+                <h2 class="text-3xl font-semibold">III. The Four Subdivisions of Each Veda</h2>
+                <p class="text-lg leading-relaxed">
+                    Each of the four Vedas is further composed of four distinct literary categories that represent the evolution of Vedic thought, moving from ritual to philosophy:
+                </p>
+                <dl class="mt-4 space-y-4 text-gray-300">
+                    <dt class="key-term text-xl">Samhitā (Collection):</dt>
+                    <dd class="pl-4">The core collection of **hymns, mantras, and prayers** for public ceremonies. This is the oldest layer.</dd>
+                    
+                    <dt class="key-term text-xl mt-3">Brāhmaṇas (Commentaries):</dt>
+                    <dd class="pl-4">Prose texts that meticulously detail and explain the **meaning, performance, and purpose of the rituals** and ceremonies mentioned in the Samhitā.</dd>
+
+                    <dt class="key-term text-xl mt-3">Āraṇyakas (Forest Books):</dt>
+                    <dd class="pl-4">"Wilderness texts" that bridge the gap between the ritualistic *Brāhmaṇas* and the philosophical *Upaniṣads*. They discuss the **symbolic and symbolic-meta-ritualistic** meaning of sacrifices.</dd>
+                    
+                    <dt class="key-term text-xl mt-3">Upaniṣads (Philosophical Treatises):</dt>
+                    <dd class="pl-4">The final layer, known as **Vedānta** ("the end of the Veda"). These are profoundly philosophical works focusing on the nature of reality, the soul (*Ātman*), the Universal Spirit (*Brahman*), and the path to liberation (*Moksha*).</dd>
+                </dl>
+            </div>
+
+            <hr class="border-amber-gold/30">
+
+            <div>
+                <h2 class="text-3xl font-semibold">IV. What Was Lost: The Missing *Shakhas*</h2>
+                <p class="text-lg leading-relaxed">
+                    While the main texts that survive are considered highly pure due to the precision of the oral tradition, it is widely acknowledged that much of the complete Vedic corpus has been lost over time.
+                </p>
+                <ul class="list-disc list-inside mt-4 space-y-3 pl-5 text-gray-300">
+                    <li>
+                        <span class="key-term">The Recensions (*Shākhās*):</span> In ancient times, the Vedas were taught and preserved across numerous schools or **recensions (*Shākhās*)**, each with its own slightly varying version of the texts, particularly the *Brāhmaṇas*.
+                    </li>
+                    <li>
+                        <span class="key-term">The Scale of Loss:</span> Puranic texts suggest that originally there were over **1,100 *Shākhās*** across all four Vedas (e.g., Rigveda had 21, Samaveda had 1,000). Today, only about **12 to 13 *Shākhās*** survive in their entirety.
+                    </li>
+                    <li>
+                        <span class="key-term">Reasons for the Loss:</span> The vast majority of this material was lost due to a confluence of factors:
+                        <ul class="list-circle list-inside mt-2 ml-4 text-sm space-y-1">
+                            <li>The immense difficulty and high cost of maintaining specialized oral traditions for less popular recensions.</li>
+                            <li>Socio-political shifts leading to the dominance and survival of only a few major schools.</li>
+                            <li>The perishable nature of early manuscripts (birch bark and palm leaves), making texts vulnerable to climate and destruction across centuries.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="text-lg leading-relaxed mt-4 italic text-gray-400">
+                    Despite this loss, the surviving core texts—especially the *Samhitās* and major *Upaniṣads*—provide an invaluable and surprisingly complete foundation for understanding the entire trajectory of Hindu philosophy.
+                </p>
+            </div>
+
+        </section>
+        
+        <footer class="mt-12 text-center text-sm text-gray-500">
+            <p>Ready to delve into the depths of a key Vedic hymn?</p>
+            <a href="nasadiya-svara.html" class="inline-block mt-4 text-amber-gold hover:text-white transition duration-300 tracking-wider font-semibold border border-amber-gold py-2 px-6 rounded-full hover:bg-amber-gold/20">
+                Explore Nāsadīya Sūktam &rarr;
+            </a>
+        </footer>
+
+    </main>
+
+</body>
+</html>
