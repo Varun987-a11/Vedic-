@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedic Mantras | Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+    <style>
+        /* --- CSS Variables for Ancient Theme (Consistent with other pages) --- */
+        :root {
+            --color-amber-gold: #FFB347; /* Soft Amber Gold */
+            --color-deep-space: #0F081C; /* Very Deep Violet */
+            --color-text-primary: #FFF8E1; /* Creamy White */
+            --color-accent-blue: #00BFFF; /* Deep Cyan/Sky Blue */
+        }
+
+        body {
+            font-family: 'Spectral', serif;
+            background-color: var(--color-deep-space);
+            color: var(--color-text-primary);
+            background-image: radial-gradient(circle at 50% 50%, rgba(25, 10, 50, 0.8) 0%, var(--color-deep-space) 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Center content vertically and horizontally */
+            padding: 2rem; /* Add some padding for small screens */
+        }
+
+        .container {
+            background-color: rgba(30, 20, 60, 0.35); /* Slightly more opaque for focus */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 179, 71, 0.4);
+            box-shadow: 0 0 40px rgba(255, 179, 71, 0.2);
+        }
+
+        .mantra-list-item {
+            display: block;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease-in-out;
+            color: var(--color-text-primary);
+            text-decoration: none;
+            font-size: 1.15rem;
+        }
+
+        .mantra-list-item:last-child {
+            border-bottom: none;
+        }
+
+        .mantra-list-item:hover {
+            background-color: rgba(255, 179, 71, 0.1);
+            transform: translateX(5px);
+            color: var(--color-amber-gold);
+        }
+
+        .main-button {
+            background-color: var(--color-amber-gold);
+            color: var(--color-deep-space);
+            padding: 1rem 2.5rem;
+            border-radius: 9999px; /* Pill shape */
+            font-weight: bold;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(255, 179, 71, 0.4);
+            text-decoration: none;
+        }
+
+        .main-button:hover {
+            background-color: #FFC66B; /* Lighter amber on hover */
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 30px rgba(255, 179, 71, 0.6);
+        }
+    </style>
+</head>
+<body class="selection:bg-amber-700 selection:text-white">
+
+    <main class="max-w-xl md:max-w-2xl w-full text-center">
+
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-yellow-300 mb-6 tracking-widest leading-tight">
+            Vedic Wisdom
+        </h1>
+        <p class="text-lg md:text-xl text-gray-300 mb-10 italic">
+            Journey into Ancient Hymns and Philosophies
+        </p>
+
+        <div class="container rounded-2xl p-6 md:p-8 mb-10">
+            <h2 class="text-2xl md:text-3xl font-semibold text-amber-gold mb-6 border-b border-amber-gold/50 pb-4">
+                Available Mantras
+            </h2>
+            <ul class="text-left">
+                <li>
+                    <a href="nasadiya-svara.html" class="mantra-list-item rounded-t-lg">
+                        Nāsadīya Sūktam (Ṛgveda 10.129)
+                    </a>
+                </li>
+                <li>
+                    <span class="mantra-list-item opacity-70 cursor-not-allowed">
+                        More Mantras Coming Soon...
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+        <a href="nasadiya-svara.html" class="main-button">
+            Explore Nasadiya Suktam
+        </a>
+
+    </main>
+
+    <footer class="mt-16 text-center text-sm text-gray-500">
+        <p>&copy; 2023 Vedic Studies. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
