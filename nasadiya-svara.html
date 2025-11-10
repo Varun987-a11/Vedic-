@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nāsadīya Sūktam | Rigveda 10.129</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+    <style>
+        /* --- CSS Variables for Ancient Theme --- */
+        :root {
+            --color-amber-gold: #FFB347; /* Soft Amber Gold */
+            --color-deep-space: #0F081C; /* Very Deep Violet */
+            --color-text-primary: #FFF8E1; /* Creamy White */
+            --color-accent-blue: #00BFFF; /* Deep Cyan/Sky Blue */
+        }
+
+        /* --- Svara/Text Styling (Crucial for Vedic Text) --- */
+        .svara-text {
+            font-family: 'Spectral', serif; 
+            font-size: 1.3rem;
+            line-height: 2;
+            color: var(--color-amber-gold);
+            text-shadow: 0 0 5px rgba(255, 179, 71, 0.6);
+            white-space: pre-wrap; 
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            display: block;
+            padding: 1rem;
+        }
+
+        /* --- General Page/Container Styles --- */
+        body {
+            background-color: var(--color-deep-space);
+            color: var(--color-text-primary);
+            background-image: radial-gradient(circle at 50% 50%, rgba(25, 10, 50, 0.8) 0%, var(--color-deep-space) 100%);
+            min-height: 100vh;
+        }
+
+        .shloka-container {
+            background-color: rgba(30, 20, 60, 0.3);
+            backdrop-filter: blur(8px); 
+            border: 1px solid rgba(255, 179, 71, 0.3);
+            box-shadow: 0 0 20px rgba(255, 179, 71, 0.1);
+        }
+
+        /* --- Clickable Shloka Styling --- */
+        .shloka-link {
+            display: block;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        
+        .shloka-link:hover {
+            background-color: rgba(255, 179, 71, 0.08);
+            border-bottom-color: var(--color-amber-gold);
+            transform: translateY(-1px);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) { /* Medium screens and below */
+            .svara-text { font-size: 1.1rem; line-height: 1.8; padding: 0.75rem; }
+            .shloka-container { max-width: 95%; }
+        }
+        /* Removed the previous custom max-width for desktop, now relying on Tailwind's max-w-6xl */
+    </style>
+</head>
+<body class="p-4 md:p-10 flex flex-col items-center">
+
+  <nav class="w-full bg-transparent py-4 fixed top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <a href="index.html" class="flex-shrink-0 text-xl font-bold text-yellow-300 hover:text-white transition duration-300 tracking-wider">
+            Vedic Wisdom
+        </a>
+        <div class="flex items-center space-x-4">
+            <a href="nasadiya-svara.html" class="text-gray-300 hover:text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Svara Text</a>
+            <a href="nasadiya-meaning.html" class="text-gray-300 hover:text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Meanings</a>
+            <a href="essence.html" class="text-gray-300 hover:text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Essence</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- <header class="text-center mb-8 md:mb-12 max-w-4xl w-full">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-300 mb-2 mt-4 tracking-widest">
+            Nāsadīya Sūktam <br> (Ṛgveda 10.129)
+        </h1>
+        <h2 class="text-lg md:text-xl text-gray-400 italic">
+            (The Hymn of Creation)
+        </h2>
+        
+    </header> -->
+
+    <main class="shloka-container max-w-6xl w-full mx-auto p-0 rounded-xl shadow-2xl overflow-hidden">
+
+        <!-- <h3 class="text-lg font-bold text-amber-500 p-4 md:p-5 mb-0 border-b border-amber-500/50">
+            Text with Svara Marks (Roman Transliteration)
+        </h3> -->
+
+        <a href="nasadiya-meaning.html#stanza1" class="shloka-link block">
+            <pre class="svara-text">
+1. nā́sada āsīn nó sád āsīt tadā́nīm nā́sīd rájo nó vyóma paró yát ।
+kím ā́varīvaḥ kúha kásya śármann ámbhaḥ kím āsīd gáhanaṁ gabhīrám ॥</pre>
+        </a>
+
+        <a href="nasadiya-meaning.html#stanza2" class="shloka-link block">
+            <pre class="svara-text">
+2. ná mṛtyúr āsīd amŕtaṁ ná tárhi ná rā́tryā áhna āsīt praketáḥ ।
+ā́nīd avā́táṁ svadhayā́ tád ékaṁ tásmād dhā́nyán ná paráḥ kíṁ canā́sa ॥</pre>
+        </a>
+
+        <a href="nasadiya-meaning.html#stanza3" class="shloka-link block">
+            <pre class="svara-text">
+3. táma āsīt támasā gūḷhám ágre 'praketáṁ saliláṁ sárvam ā́ ídam ।
+tucchyénābhú ápihitaṁ yád ā́sīt tápasás tán mahinā́ jāyataíkam ॥</pre>
+        </a>
+
+        <a href="nasadiya-meaning.html#stanza4" class="shloka-link block">
+            <pre class="svara-text">
+4. kā́mas tád ágre sám avartatā́dhi mánoso rétaḥ prathamáṁ yád ā́sīt ।
+sató bándhum ásati nír avindan hṛdí pratī́ṣyā kaváyo manīṣā́ ॥</pre>
+        </a>
+
+        <a href="nasadiya-meaning.html#stanza5" class="shloka-link block">
+            <pre class="svara-text">
+5. tiraścīno vítato raśmír eṣām ádhaḥ svid āsī́d upári svid āsīt ।
+retodhā́ āsan mahimāná āsan svadhā́ avástāt práyatiḥ parástāt ॥</pre>
+        </a>
+
+        <a href="nasadiya-meaning.html#stanza6" class="shloka-link block">
+            <pre class="svara-text">
+6. kó addhā́ veda ká ihá prá vocat kúta ā́jātā kúta iyáṁ visŕṣṭiḥ ।
+arvā́g devā́ asyá visárjanenā́thā kó véda yáta ābabhū́va ॥</pre>
+        </a>
+
+        <a href="nasadiya-meaning.html#stanza7" class="shloka-link block border-b-0">
+            <pre class="svara-text">
+7. iyáṁ vísṛṣṭir yáta ābabhū́va yádi vā dadhé yádi vā ná ।
+yó asyā́dhyakṣaḥ paramé vyóman só aṅgá vedá yádi vā ná véda ॥</pre>
+        </a>
+        
+    </main>
+    
+    <footer class="mt-12 text-center text-sm text-gray-500">
+        <p>Ensure you create the destination file: <code class="text-amber-400">nasadiya-meaning.html</code></p>
+        <p class="mt-4 text-sm text-gray-500">
+            Click on any stanza to reveal its poetic meaning.
+        </p>
+        <a href="essence.html" class="inline-block mt-4 text-amber-gold hover:text-white transition duration-300 tracking-wider font-semibold">
+            Read the Ultimate Summary &rarr;
+        </a>
+    </footer>
+
+</body>
+</html>
